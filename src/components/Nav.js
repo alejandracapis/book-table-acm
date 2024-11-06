@@ -2,23 +2,29 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function Nav() {
+    const styleLink = {
+            color: 'black',
+            fontWeight: 'bolder',
+            fontFamily: '"karla", sans-serif',
+    };
+
   return (
-    <div>
-        <ul>
+    <nav>
+        <ul style={{listStyle:'none', display:'grid', gridTemplateColumns:'repeat(5, minmax(0, 1fr))', gap: '1%', textAlign:'center', justifyContent:'space-evenly' }}>
             <li>
-                <Link to='/'>Home</Link>
+                <Link to='/' style={styleLink}>Home</Link>
             </li>
             <li>
-                <Link to='/booking'>Book a table</Link>
+                <Link to='/booking' style={styleLink}>Book a table</Link>
             </li>
-                <Link to='/specials'>Menu</Link>
+                <Link to='/specials' style={styleLink}>Menu</Link>
             <li>
-                <Link to='/testimonials'>Testimonials</Link>
+                <Link to='/testimonials' style={styleLink}>Testimonials</Link>
             </li>
             <li>
-                <Link to='/about'>About</Link>
+                <Link to='/about' style={styleLink}>About</Link>
             </li>
         </ul>
-    </div>
+    </nav>
   )
 }
