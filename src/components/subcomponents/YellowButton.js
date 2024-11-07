@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function YellowButton() {
+export default function YellowButton({assigncolumn, assignrow, buttontxt}) {
     const styleButton = {
         backgroundColor: '#F4CE14',
         border: 'none',
@@ -18,7 +18,7 @@ export default function YellowButton() {
 
   return (
     <button type='button' style={styleButton}>
-        {BtnTxt}
+      {buttontxt}
     </button>
   );
 };

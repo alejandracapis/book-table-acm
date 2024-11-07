@@ -1,12 +1,15 @@
 import React from 'react';
-import YellowButton from './subcomponents/YellowButton';
 
 export default function BookingPage() {
   const styleMainSection = {
-    backgroundColor: '495E57',
+    backgroundColor: '#495E57',
     display: 'grid',
-    gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
-    gridTemplateRows: 'repeat(4, minmax(0, auto))'
+    gridTemplateColumns: 'repeat(2, minmax(0, 50%))',
+    gridTemplateRows: 'repeat(4, minmax(0, auto))',
+    alignItems: 'center',
+    justifyContent: 'center',
+    textAlign: 'start',
+    padding: '0 10%'
   }
 
   const styleMainHeader = {
@@ -14,31 +17,34 @@ export default function BookingPage() {
     gridRow: '1',
     color: '#F4CE14',
     fontFamily: "'Markazi', sans-serif",
-    fontSize: 'calc(1vw + 1vh)',
-    textAlign:'start'
+    fontSize: 'calc(1vw + 1.5vh)'
   }
   const styleSecondHeader = {
     gridColumn: '1',
-    gridRow: '1',
+    gridRow: '2',
     color: '#EDEFEE',
     fontFamily: "'Markazi', sans-serif",
-    fontSize: 'calc(0.8vw + 0.8vh)',
-    textAlign:'start'
-  }
+    fontSize: 'calc(0.8vw + 1.2vh)',
+}
 
   const styleMainText = {
     gridColumn: '1',
-    gridRow: '2',
+    gridRow: '',
     color: '#EDEFEE',
     fontFamily: "'karla', sans-serif",
-    fontSize: 'calc(0.5vw + 0.5vh)',
-    textAlign:'start'
+    fontSize: 'calc(0.5vw + 0.8vh)',
+    textAlign:'start',
+    paddingRight: '10%'
   }
 
   const styleMainImg = {
     gridColumn:'2',
-    gridRow:'span 4'
-  }
+    gridRow:'span 4',
+    alignSelf: 'end',
+    justifySelf: 'center',
+    borderRadius: '3vh'
+    }
+
 
   return (
     <section style={styleMainSection}>
@@ -50,13 +56,7 @@ export default function BookingPage() {
         recipies served within a modern
         twist.
       </p>
-      <YellowButton
-      style={{
-        gridColumn: '1',
-        gridRow: '3'}}
-        BtnTxt="Reserve a table"
-        />
-        <img src={require('./images/waiter.jpg')} alt='main img' 
+      <img src={require('./images/waiter.jpg')} alt='main img'
         style={styleMainImg}/>
     </section>
     );

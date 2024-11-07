@@ -3,6 +3,7 @@ import CallToAction from './subcomponents/CallToAction';
 import YellowButton from './subcomponents/YellowButton';
 
 export default function Specials() {
+
   const styleSection = {
     display: 'grid',
     gridTemplateColumns: 'repeat(3, minmax(0,1fr)',
@@ -21,10 +22,10 @@ export default function Specials() {
         <h2 style={{ gridRow:'1', gridColumn:'span 2', fontSize: 'calc(1vw + 1.5vh' }}>
           This weeks specials!
         </h2>
-        <YellowButton
-        style={{gridRow:'1', gridColumn:'3'}}
-          BtnTxt="Order Online"
-        />
+        <YellowButton style={{
+          gridColumn: '2',
+          gridRow: '3'}}
+        buttontxt="Order Online"/>
         <CallToAction
         style ={{gridRow: '2', gridColumn: '1'}}
           imageUrl={require("./images/greek.jpg")} name="Greek Salad"
