@@ -22,8 +22,9 @@ export default function Specials() {
           This weeks specials!
         </h2>
         <YellowButton
-          buttontxt="Order Online"
-          />
+        style={{gridRow:'1', gridColumn:'3'}}
+          BtnTxt="Order Online"
+        />
         <CallToAction
         style ={{gridRow: '2', gridColumn: '1'}}
           imageUrl={require("./images/greek.jpg")} name="Greek Salad"

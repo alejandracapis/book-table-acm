@@ -13,14 +13,12 @@ export default function YellowButton() {
         fontSize: 'calc(0.7vw + 0.5vh)',
         width: '10vw',
         height: '5vh',
-        gridRow: '1',
-        gridColumn:'3'
       }
 
 
   return (
     <button type='button' style={styleButton}>
-        {buttontxt}
+        {BtnTxt}
     </button>
   );
 };
