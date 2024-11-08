@@ -2,7 +2,7 @@
   "name": "book-table-acm",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://alejandracapis.github.io/book-table-acm",
+  "homepage": "https://alejandracapis.github.io/book-table-acm/",
   "dependencies": {
     "@fontsource/karla": "^5.1.0",
     "@fontsource/markazi-text": "^5.1.0",
