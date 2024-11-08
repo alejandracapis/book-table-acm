@@ -7,10 +7,10 @@ import Chicago from '../components/subcomponents/Chicago';
 export default function Main() {
   return (
     <main style={{justifyContent:'center', paddingBottom: '10%'}}>
-      <BookingPage />
-      <Specials />
-      <Testimonials />
-      <Chicago />
+      <BookingPage id="bookpage" />
+      <Specials id="specials"/>
+      <Testimonials id="testimonials"/>
+      <Chicago id="about" />
     </main>
   )
 }

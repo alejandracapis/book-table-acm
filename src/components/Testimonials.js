@@ -13,24 +13,28 @@ export default function Testimonials() {
         padding:'5% 10%',
         backgroundColor: '#495E57',
         width:'100%' }}>
-        <h1 style={{ gridColumnEnd: 'span 4',textAlign: 'center', fontSize: '36px', fontWeight: 'lighter', marginBottom: '2%' }}>Testimonials</h1>
+        <h1 style={{ gridColumnEnd: 'span 4',textAlign: 'center', fontSize: '36px', fontWeight: 'lighter', marginBottom: '2%', color: '#EDEFEE' }}>Testimonials</h1>
         <CustomersSay
-          rating="Rating"
-          nameprofile="Name"
-          reviewtxt="Review text"
+        imgUrl={require('../components/images/profile1.jpg')}
+          rating="5"
+          nameprofile="Emilio"
+          reviewtxt="I like having dinner with my friends here!"
         />
         <CustomersSay
-          rating="Rating"
-          nameprofile="Name"
-          reviewtxt="Review text" />
+        imgUrl={require('../components/images/profile2.jpg')}
+          rating="5"
+          nameprofile="Bertha"
+          reviewtxt="The best place for family reunions." />
         <CustomersSay
-          rating="Rating"
-          nameprofile="Name"
-          reviewtxt="Review text" />
+        imgUrl={require('../components/images/profile3.jpg')}
+          rating="5"
+          nameprofile="Tatiana"
+          reviewtxt="The best birthday party ever!" />
         <CustomersSay
-          rating="Rating"
-          nameprofile="Name"
-          reviewtxt="Review text" />
+        imgUrl={require('../components/images/profile4.jpg')}
+          rating="5"
+          nameprofile="Lion"
+          reviewtxt="It's great for a romantic dinner!" />
       </section>
   )
 }

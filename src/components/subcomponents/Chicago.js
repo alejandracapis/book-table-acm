@@ -65,7 +65,7 @@ export default function Chicago() {
       <section style={styleChicagoSection}>
         <h1 style={styleChicagoHeader}>Little Lemon</h1>
         <h2 style={styleChicagoHeaderTwo}>Chicago</h2>
-        <p style={styleChicagoText}>We are a family owned
+        <p style={styleChicagoText}>
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
         Velit officia consequat duis enim velit mollit.
         Exercitation veniam consequat sunt nostrud amet.

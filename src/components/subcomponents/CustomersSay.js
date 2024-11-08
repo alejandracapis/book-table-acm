@@ -1,33 +1,62 @@
 import React from 'react';
 
-export default function CustomersSay({rating, nameprofile, reviewtxt}) {
+export default function CustomersSay({rating, nameprofile, reviewtxt, imgUrl}) {
   const ratingHeader = {
       color: 'black',
       fontFamily: "'karla', sans-serif",
       fontSize: 'calc(0.5vw + 0.8vh)',
       fontWeight: 'bolder',
-      alignSelf:'center'
+      alignSelf:'end',
+      gridColumn: 'span 2',
+      gridRow: '1'
+  }
+
+  const ratingHeaderTwo = {
+    color: 'black',
+    fontFamily: "'karla', sans-serif",
+    fontSize: 'calc(0.5vw + 0.8vh)',
+    fontWeight: 'bolder',
+    alignSelf:'center',
+    gridColumn: '2',
+    gridRow: '2',
+    justifySelf: 'start'
+}
+
+  const styleCustomersSay = {
+    display: 'grid',
+    gridTemplateRows: '1fr 2fr 1fr',
+    gridTemplateColumns: 'repeat(2, minmax(0, 50%))',
+    rowGap: '5%',
+    backgroundColor: '#EDEFEE',
+    padding:'8%'
+  }
+
+  const styleImgCustomer = {
+    height: 'calc(3vw + 3vh)',
+    maxHeight: 'calc(3vw + 3vh)',
+    backgroundColor: 'grey',
+    opacity: '0.8',
+    textAlign: 'center',
+    gridColumn: '1',
+    gridRow: '2'
+  }
+
+  const styleCustomerTxt = {
+    fontFamily: "'karla', sans-serif",
+    fontSize: 'calc(0.5vw + 0.8vh)',
+    gridColumn: 'span 2',
+    gridRow: '3'
   }
 
   return (
-      <section style={{ display: 'grid', gridTemplateRows: '1fr 3fr 1fr', gridTemplateColumns: 'minmax(0,15vw)', backgroundColor: '#EDEFEE', padding:'10%'}}>
-        <h4 style={ratingHeader}>{rating}</h4>
-        <article style={{display: 'grid', gridAutoFlow: 'column', gap: '5%'}}>
+      <section style={styleCustomersSay}>
+        <h4 style={ratingHeader}>Rating: {rating}&#11088;</h4>
           <img
+          src={imgUrl}
           alt='img'
-          style={{
-            height: '100%',
-            maxHeight: '100%',
-            maxWidth: '50%',
-            borderStyle: 'solid',
-            borderWidth: '1px',
-            backgroundColor: 'grey',
-            opacity: '0.8',
-            textAlign: 'center',
-            }}/>
-          <h4 style={ratingHeader}>{nameprofile}</h4>
-        </article>
-        <p style={{fontFamily: "'karla', sans-serif", fontSize: 'calc(0.5vw + 0.8vh)'}}>{reviewtxt}</p>
+          style={styleImgCustomer}/>
+        <h4 style={ratingHeaderTwo}>{nameprofile}</h4>
+        <p style={styleCustomerTxt}>{reviewtxt}</p>
       </section>
   )
 }
