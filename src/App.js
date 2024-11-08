@@ -13,7 +13,7 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="book-table-acm/" element={<Main />}></Route>
+        <Route path="#" element={<Main />}></Route>
       </Routes>
       <Footer />
     </>
