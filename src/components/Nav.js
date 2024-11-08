@@ -13,7 +13,7 @@ export default function Nav() {
     <nav>
         <ul style={{listStyle:'none', display:'grid', gridTemplateColumns:'repeat(6, minmax(0, 1fr))', gap: '2%', textAlign:'center', justifyContent:'space-evenly' }}>
             <li>
-                <Link to='/' style={styleLink}>Home</Link>
+                <Link to='book-table-acm/' style={styleLink}>Home</Link>
             </li>
             <li>
                 <Link to='/about' style={styleLink}>About</Link>
