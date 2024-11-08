@@ -6,18 +6,19 @@ export default function Nav() {
             color: 'black',
             fontWeight: 'bolder',
             fontFamily: '"karla", sans-serif',
-    };
+            fontSize: 'calc(0.5vw + 0.5vh)'
+            };
 
   return (
     <nav>
-        <ul style={{listStyle:'none', display:'grid', gridTemplateColumns:'repeat(5, minmax(0, 1fr))', gap: '1%', textAlign:'center', justifyContent:'space-evenly' }}>
+        <ul style={{listStyle:'none', display:'grid', gridTemplateColumns:'repeat(5, minmax(0, 1fr))', gap: '2%', textAlign:'center', justifyContent:'space-evenly' }}>
             <li>
                 <Link to='/' style={styleLink}>Home</Link>
             </li>
             <li>
                 <Link to='/booking' style={styleLink}>Book a table</Link>
             </li>
-                <Link to='/specials' style={styleLink}>Menu</Link>
+                <Link to='/specials' style={styleLink}>Specials</Link>
             <li>
                 <Link to='/testimonials' style={styleLink}>Testimonials</Link>
             </li>

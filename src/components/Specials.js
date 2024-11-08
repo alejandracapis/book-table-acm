@@ -10,8 +10,8 @@ export default function Specials() {
     gridTemplateRows: '10% 80%',
     alignItems: 'start',
     margin: '5% 20% 10%',
-    height: '100%',
-    maxHeight:'100%',
+    height: 'auto',
+    maxHeight:'auto',
     columnGap: '10%',
     rowGap: '10%'
   }

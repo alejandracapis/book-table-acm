@@ -5,26 +5,26 @@ export default function BookingPage() {
     backgroundColor: '#495E57',
     display: 'grid',
     gridTemplateColumns: 'repeat(2, minmax(0, 50%))',
-    gridTemplateRows: 'repeat(4, minmax(0, auto))',
-    alignItems: 'center',
+    gridTemplateRows: 'minmax(0, 5vh) minmax(0,5vh) minmax(0,10vh) minmax(0,10vh)',
+    alignItems: 'start',
     justifyContent: 'center',
     textAlign: 'start',
-    padding: '0 10%'
+    padding: '2% 20% 2% 30%',
+    marginBottom: '10%'
   }
 
   const styleMainHeader = {
     gridColumn: '1',
     gridRow: '1',
     color: '#F4CE14',
-    fontFamily: "'Markazi', sans-serif",
-    fontSize: 'calc(1vw + 1.5vh)'
+    fontSize: 'calc(1.5vw + 1.5vh)'
   }
   const styleSecondHeader = {
     gridColumn: '1',
     gridRow: '2',
     color: '#EDEFEE',
     fontFamily: "'Markazi', sans-serif",
-    fontSize: 'calc(0.8vw + 1.2vh)',
+    fontSize: 'calc(1.2vw + 1.2vh)',
 }
 
   const styleMainText = {
@@ -32,19 +32,40 @@ export default function BookingPage() {
     gridRow: '',
     color: '#EDEFEE',
     fontFamily: "'karla', sans-serif",
-    fontSize: 'calc(0.5vw + 0.8vh)',
+    fontSize: 'calc(0.8vw + 0.8vh)',
     textAlign:'start',
-    paddingRight: '10%'
+    paddingRight: '40%',
+    paddingTop: '5%'
   }
 
   const styleMainImg = {
-    gridColumn:'2',
-    gridRow:'span 4',
-    alignSelf: 'end',
-    justifySelf: 'center',
-    borderRadius: '3vh'
+    gridColumnStart: '2',
+    gridColumnEnd: '3',
+    gridRowStart: '1',
+    gridRowEnd: '4',
+    height: 'calc(18vw + 18vh)',
+    maxHeight: 'calc(18vw + 18vh)',
+    width: 'auto',
+    maxWidth: 'auto',
+    borderRadius: '3vh',
+    marginBottom: '10vh'
     }
 
+    const styleBtnBook = {
+      backgroundColor: '#F4CE14',
+      border: 'none',
+      borderRadius: '0.6vh',
+      textAlign: 'center',
+      justifySelf: 'start',
+      fontFamily: '"karla", sans-serif',
+      color: 'black',
+      fontWeight: 'bold',
+      fontSize: 'calc(0.7vw + 0.5vh)',
+      width: 'calc(5vw + 5vh)',
+      height: 'calc(1.5vw + 1.5vh)',
+      gridColumn: '1',
+      gridRow: '5',
+    }
 
   return (
     <section style={styleMainSection}>
@@ -56,6 +77,9 @@ export default function BookingPage() {
         recipies served within a modern
         twist.
       </p>
+      <button style={styleBtnBook} >
+        Book a table
+      </button>
       <img src={require('./images/waiter.jpg')} alt='main img'
         style={styleMainImg}/>
     </section>

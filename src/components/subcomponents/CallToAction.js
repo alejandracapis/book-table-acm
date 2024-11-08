@@ -17,7 +17,7 @@ export default function CallToAction({ imageUrl, name, dish, price, description 
   const styleDishImg = {
     gridColumn: '1/ span 2',
     gridRow: '1',
-    height: '200px',
+    height: 'calc(8vw + 8vh)',
     width: 'auto',
     maxWidth: '100%',
     borderTopLeftRadius: '5%',
