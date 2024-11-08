@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/book-table-acm/static/css/main.ac8d5d3c.css",
-    "main.js": "/book-table-acm/static/js/main.7c366b67.js",
+    "main.js": "/book-table-acm/static/js/main.a3045196.js",
     "static/js/453.ff556caf.chunk.js": "/book-table-acm/static/js/453.ff556caf.chunk.js",
     "static/media/img2.jpg": "/book-table-acm/static/media/img2.a414e917328742f0ac59.jpg",
     "static/media/img1.jpg": "/book-table-acm/static/media/img1.1b0854149f17e98c2bd7.jpg",
@@ -28,11 +28,11 @@
     "static/media/markazi-text-vietnamese-400-normal.woff2": "/book-table-acm/static/media/markazi-text-vietnamese-400-normal.a8427e07cb01094b18c0.woff2",
     "index.html": "/book-table-acm/index.html",
     "main.ac8d5d3c.css.map": "/book-table-acm/static/css/main.ac8d5d3c.css.map",
-    "main.7c366b67.js.map": "/book-table-acm/static/js/main.7c366b67.js.map",
+    "main.a3045196.js.map": "/book-table-acm/static/js/main.a3045196.js.map",
     "453.ff556caf.chunk.js.map": "/book-table-acm/static/js/453.ff556caf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ac8d5d3c.css",
-    "static/js/main.7c366b67.js"
+    "static/js/main.a3045196.js"
   ]
 }
